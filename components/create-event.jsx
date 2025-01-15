@@ -13,7 +13,8 @@ import {
     DrawerTrigger,
   } from "@/components/ui/drawer"
 
-import {  useRouter, useSearchParams } from 'next/navigation';
+import {  useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation'
   
 
 export default function CreateEventDrawer() {
