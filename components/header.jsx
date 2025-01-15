@@ -13,7 +13,7 @@ const Header = async () => {
 
   return <nav className='mx-auto py-2 px-4 flex justify-between items-center shadow-medium border-b-2'>
     <Link href={"/"} className='flex items-center'>
-    <Image src="/logo.png"  width="150" height="60" alt='Calendix logo' className='h-16 w-auto' />
+    <Image src="/logo.png"  width="300" height="150" alt='Calendix logo' className='h-16 w-auto' />
     </Link >
     <div className='flex items-center gap-4'>
         <Link href="/events?create=true">
