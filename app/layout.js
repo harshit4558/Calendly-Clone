@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import CreateEventDrawer from "@/components/create-event";
+import { Suspense } from "react";
 
 
 
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
         <Header/>
         <main className="min-h-screen bg-gradient-to-b from -blue-50 to-white">
         {/* <Button>Submit</Button> */}
+        <Suspense>
         {children}
+        </Suspense>
         </main>
         <footer className="bg-blue-100 py-12">
           <div className="container mx-auto px-4 text-center text-gray-600"> 
