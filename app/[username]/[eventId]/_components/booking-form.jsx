@@ -28,12 +28,24 @@ const BookingForm = ({ event,availability }) => {
     )?.slots ||[]
     : [];
 
+    useEffect(()=> {
+        if(selectedDate){
+            setValue('date', format(selectedDate, "yyyy-MM-dd"))
+        }
+    },[selectedDate])
+    useEffect(()=> {
+        if(selectedTime){
+            setValue('time', selectedTime)
+        }
+    },[selectedTime])
+
     const { loading, data, fn: fnCreateBooking } = useFetch(createBooking);
 
     const onSubmit = async (data) => {
         console.log(data);
         if(!selectedDate || !selectedTime){
             console.error("Date or time is not selected");
+            return;
         }
         const startTime = new Date(
             `${format(selectedDate, "yyyy-Mm-dd")}T${selectedTime}`
@@ -49,9 +61,10 @@ const BookingForm = ({ event,availability }) => {
             additionalInfo : data.additionalInfo
         }
         await fnCreateBooking(bookingData);
-    }
+    };
     if(data){
-        return <div className='text-center p-10 border bg-white ' >
+        return (
+         <div className='text-center p-10 border bg-white ' >
             <h2 className='text-2xl font-bold mb-4'>Booking Succesfull</h2>
             {data.meetLink && (
                 <p>
@@ -67,18 +80,8 @@ const BookingForm = ({ event,availability }) => {
                 </p>
             )}
         </div>
+        )
     }
-    useEffect(()=> {
-        if(selectedDate){
-            setValue('date', format(selectedDate, "yyyy-MM-dd"))
-        }
-    },[selectedDate])
-    useEffect(()=> {
-        if(selectedTime){
-            setValue('time', selectedTime)
-        }
-    },[selectedTime])
-
 
     return <div className='flex flex-col gap-8 p-10 border bg-white '>
         <div className='md:h-96 flex flex-col md:flex-row gap-5'>
