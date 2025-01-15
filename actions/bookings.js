@@ -1,7 +1,6 @@
 "use server"
 
-import { clerkClient } from "@clerk/nextjs/server";
-import { add } from "date-fns";
+import { clerkClient } from "@clerk/clerk-sdk-node";
 import {google} from "googleapis";
 import { db } from "@/lib/prisma";
 
@@ -16,12 +15,21 @@ export async function createBooking(bookingData){
             throw new Error("Event Not Found");
         }
         // use google api to add meet link
-        const {data} = await clerkClient.users.getUserOauthAccessToken(
-            event.user.clerkId,
-            "oauth_google"
+        const cid = event.user.clerkUserid;
+        const provider = 'oauth_google';
+        
+        const { data } = await clerkClient.users.getUserOauthAccessToken(
+            cid,provider
         );
-
-        const token = data[0]?.token;
+        // const response = await client.users.request({
+        //     method: 'GET',
+        //     path: `/users/${event.user.clerkUserid}/oauth_access_tokens`,
+        //     queryParams : {
+        //         provider : 'oauth_google'
+        //     }
+        // })
+        
+        const token = data[0].token;
 
         if(!token){
             throw new Error("Event Creator has not connected Google Calendar");
