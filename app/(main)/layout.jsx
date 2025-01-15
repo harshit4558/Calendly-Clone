@@ -2,7 +2,7 @@
 
 import { useUser } from '@clerk/nextjs'
 import { BarChart, Calendar, Clock, Users } from 'lucide-react';
-import React from 'react'
+import React, { Suspense } from 'react'
 import { BarLoader } from 'react-spinners';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -47,7 +47,9 @@ const AppLayout = ({children}) => {
                         {navItems.find((item) => item.href === pathName).label || "Dashboard"}
                     </h2>
                 </header>
+                <Suspense>
                 {children}
+                </Suspense>
                 </main>
 
                 <nav className='md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-md'>
