@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card'
 import { Calendar, Video, Clock } from 'lucide-react'
 import { format } from 'date-fns'
+import { Button } from '@/components/ui/button'
 
 const MeetingList = ({ meetings, type }) => {
     if(meetings.length === 0){
@@ -46,7 +47,7 @@ const MeetingList = ({ meetings, type }) => {
                             )}
                         </CardContent>
                         <CardFooter>
-                            <p>Card Footer</p>
+                            <Button variant="destructive">Cancel Meeting</Button>
                         </CardFooter>
                     </Card>
 
