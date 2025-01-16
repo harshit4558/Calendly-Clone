@@ -1,0 +1,13 @@
+diff --git a/node_modules/eslint-config-next/parser.js b/node_modules/eslint-config-next/parser.js
+index 9e9fd22..db8eef5 100644
+--- a/node_modules/eslint-config-next/parser.js
++++ b/node_modules/eslint-config-next/parser.js
+@@ -6,4 +6,8 @@ const {
+ module.exports = {
+   parse,
+   parseForESLint,
++  meta: {
++    name: 'eslint-config-next/parser',
++    version,
++  },
+ }
