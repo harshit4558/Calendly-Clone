@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Calendxi
+
+Calendxi is a practice project inspired by Calendly, allowing users to create and manage events, set their availability, and share event links for seamless meeting scheduling.
+
+## Features
+
+- **Create Events**: Users can create events with specific details.
+- **Shareable Event Links**: Generate unique URLs to share with others for booking meetings.
+- **Update Availability**: Users can define and update their overall availability for scheduling.
+
+## Tech Stack
+
+- **Frontend**: [React](https://reactjs.org/), [ShadCN/UI](https://ui.shadcn.dev/)
+- **Backend**: [Next.js](https://nextjs.org/)
+- **Database**: [PostgreSQL](https://www.postgresql.org/) with [Prisma ORM](https://www.prisma.io/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+
+## Screenshots
+
+### Dashboard
+![Dashboard](![Screenshot 2025-01-24 at 11 52 28 AM](https://github.com/user-attachments/assets/6797aa07-22a4-4b15-96b7-b4b20513bc29)
+) <!-- Replace `#` with the path to your screenshot -->
+
+---
+
+### Get Started Page
+![Get Started Page](![Screenshot 2025-01-24 at 11 50 51 AM](https://github.com/user-attachments/assets/41086bd2-14b1-42b7-a6dc-71e0f7248656)
+) <!-- Replace `#` with the path to your screenshot -->
+
+---
+
+### Adding New Event
+![Adding New Event](![Screenshot 2025-01-24 at 11 56 25 AM](https://github.com/user-attachments/assets/d9e257b5-c456-4dc3-9755-477419bd5528)
+ <!-- Replace `#` with the path to your screenshot -->
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js installed
+- PostgreSQL database set up
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/calendxi.git
