@@ -1,4 +1,4 @@
-# Calendxi
+# Calendix
 
 Calendxi is a practice project inspired by Calendly, allowing users to create and manage events, set their availability, and share event links for seamless meeting scheduling.
 
@@ -18,19 +18,19 @@ Calendxi is a practice project inspired by Calendly, allowing users to create an
 ## Screenshots
 
 ### Dashboard
-![Dashboard](![Screenshot 2025-01-24 at 11 52 28 AM](https://github.com/user-attachments/assets/6797aa07-22a4-4b15-96b7-b4b20513bc29)
+(![Screenshot 2025-01-24 at 11 52 28 AM](https://github.com/user-attachments/assets/6797aa07-22a4-4b15-96b7-b4b20513bc29)
 ) <!-- Replace `#` with the path to your screenshot -->
 
 ---
 
 ### Get Started Page
-![Get Started Page](![Screenshot 2025-01-24 at 11 50 51 AM](https://github.com/user-attachments/assets/41086bd2-14b1-42b7-a6dc-71e0f7248656)
+(![Screenshot 2025-01-24 at 11 50 51 AM](https://github.com/user-attachments/assets/41086bd2-14b1-42b7-a6dc-71e0f7248656)
 ) <!-- Replace `#` with the path to your screenshot -->
 
 ---
 
 ### Adding New Event
-![Adding New Event](![Screenshot 2025-01-24 at 11 56 25 AM](https://github.com/user-attachments/assets/d9e257b5-c456-4dc3-9755-477419bd5528)
+(![Screenshot 2025-01-24 at 11 56 25 AM](https://github.com/user-attachments/assets/d9e257b5-c456-4dc3-9755-477419bd5528)
  <!-- Replace `#` with the path to your screenshot -->
 
 ---
