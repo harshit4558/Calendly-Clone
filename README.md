@@ -41,8 +41,4 @@ Calendxi is a practice project inspired by Calendly, allowing users to create an
 - Node.js installed
 - PostgreSQL database set up
 
-### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/calendxi.git
